@@ -1,168 +1,63 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: brown;
 }
-.carrusel {
+body {
+    background-color: #f5f5f5f5;
+}
+.contenedor {
     width: 50%;
-    height: 80vh;
+    height:auto;
     border: thick solid blue;
+    margin-top: 100px;
+    margin-left: 100px;
     overflow-x: hidden;
-    display:flex; 
-    margin-top: 80px;
-    margin-left: 200px;   
-}
-.carrusel-container {
-    width:100%;
-    overflow-x: scroll;
     display:grid;
-    grid-template-columns: repeat(14,100%);
+    grid-template-columns:(8,100%);
+}
+ul {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: slide;
+    animation-duration: 50s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     
 }
-.carrusel-slide-1 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(messi.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-2 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(mbappe.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-3 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(salah.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-4 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(kevin.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-5 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(jude.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-6 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(vini.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-7 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(lautaro.avif);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-8 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(robben.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-9 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(ribery.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-10 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(david.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-11 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(chielini.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-12 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(iniesta.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-13 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(xavi_barca.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.carrusel-slide-14 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(maradona.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center center;
-}
-.titulo {
-    text-decoration: none;
-    color:aliceblue;
-    font-size: 30px;
-}
 
+@keyframes slide {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    10% {margin-left: -10%;}
+    20% {margin-left: -10%;}
+
+    20% {margin-left: -20%;}
+    30% {margin-left: -20%;}
+
+    30% {margin-left: -30%;}
+    40% {margin-left: -30%;}
+
+    40% {margin-left: -40%;}
+    50% {margin-left: -40%;}
+
+    50% {margin-left: -50%;}
+    60% {margin-left: -50%;}
+
+    60% {margin-left: -60%;}
+    70% {margin-left: -60%;}
+
+    70% {margin-left: -70%;}
+    80% {margin-left: -70%;}
+
+    80% {margin-left: -80%;}
+    90% {margin-left: -80%;}
+
+    90% {margin-left: -90%;}
+    100% {margin-left: -90%;}
+}
 
